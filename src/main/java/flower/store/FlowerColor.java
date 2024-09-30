@@ -1,18 +1,18 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
 package flower.store;
 
 public enum FlowerColor {
-    /**
-     * Flower colors.
-     */
-    RED("#FF0000"), BLUE("#0000FF");
-    private final String stringRepresentation;
+   RED("#FF0000"),
+   BLUE("#0000FF"),
+   YELLOW("#FFFF00");
 
-    FlowerColor(String stringRepresentation) {
-        this.stringRepresentation = stringRepresentation;
-    }
+   private final String stringRepresentation;
 
-    @Override
-    public String toString() {
-        return stringRepresentation;
-    }
+   private FlowerColor(String stringRepresentation) {
+      this.stringRepresentation = stringRepresentation;
+   }
+
+   public String toString() {
+      return this.stringRepresentation;
+   }
 }
