@@ -7,7 +7,8 @@ public class Flower {
    private FlowerType flowerType;
 
    // Constructor
-   public Flower(double sepaLength, FlowerColor clr, double prc, FlowerType flwrTp) {
+   public Flower(double sepaLength, FlowerColor clr, 
+                 double prc, FlowerType flwrTp) {
       this.sepalLength = sepaLength;
       this.color = clr;
       this.price = prc;
