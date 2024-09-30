@@ -1,5 +1,5 @@
 package flower.store;
-
+//
 import lombok.Generated;
 
 public class Flower {
@@ -13,7 +13,7 @@ public class Flower {
       this.sepalLength = sepalLength;
       this.color = color;
       this.price = price;
-      this.flowerType = flowerType;
+      this.flowerType = flowerType; 
    }
 
 
