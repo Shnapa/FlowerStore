@@ -18,16 +18,13 @@ public class FlowerBucket {
     }
 
     public double getPrice() {
-      double totalPrice = 0;
-      for (FlowerPack pack : flowerPacks) {
-          double flowerPrice = pack.getFlower().getPrice();
-          int quantity = pack.getQuantity();
-          totalPrice += flowerPrice * quantity;
-          System.out.println("Pack price: " + (flowerPrice * quantity) + ", Total so far: " + totalPrice);
-      }
-      return totalPrice;
-  }
-  
+        double totalPrice = 0;
+        for (FlowerPack pack : flowerPacks) {
+            totalPrice += pack.getFlower().getPrice() * pack.getQuantity();
+        }
+        return totalPrice;
+    }
+
     public void removeFlowerPack(int index) {
         if (index >= 0 && index < this.flowerPacks.size()) {
             this.flowerPacks.remove(index);

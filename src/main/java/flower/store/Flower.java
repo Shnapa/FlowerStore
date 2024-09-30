@@ -1,4 +1,3 @@
-// Source code is decompiled from a .class file using FernFlower decompiler.
 package flower.store;
 
 import lombok.Generated;
@@ -9,19 +8,14 @@ public class Flower {
    private double price;
    private FlowerType flowerType;
 
-   public Flower(double sepalLength, FlowerColor color, double price, FlowerType flowerType) {
+   public Flower(double sepalLength, FlowerColor color, 
+   double price, FlowerType flowerType) {
       this.sepalLength = sepalLength;
       this.color = color;
       this.price = price;
       this.flowerType = flowerType;
    }
 
-   public String getColor() {
-      return this.color.toString();
-   }
-
-   public Flower() {
-   }
 
    @Generated
    public double getSepalLength() {
@@ -56,5 +50,12 @@ public class Flower {
    @Generated
    public void setFlowerType(FlowerType flowerType) {
       this.flowerType = flowerType;
+   }
+
+   public Flower() {
+   }
+
+   public String getColor() {
+      return this.color.toString();
    }
 }
