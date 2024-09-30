@@ -1,6 +1,4 @@
 package flower.store;
-//
-import lombok.Generated;
 
 public class Flower {
    private double sepalLength;
@@ -8,54 +6,49 @@ public class Flower {
    private double price;
    private FlowerType flowerType;
 
-   public Flower(double sepalLength, FlowerColor color, 
-   double price, FlowerType flowerType) {
-      this.sepalLength = sepalLength;
-      this.color = color;
-      this.price = price;
-      this.flowerType = flowerType; 
+   // Constructor
+   public Flower(double sepaLength, FlowerColor clr, double prc, FlowerType flwrTp) {
+      this.sepalLength = sepaLength;
+      this.color = clr;
+      this.price = prc;
+      this.flowerType = flwrTp; 
    }
 
+   // Default constructor
+   public Flower() {
+   }
 
-   @Generated
+   // Getters
    public double getSepalLength() {
       return this.sepalLength;
    }
 
-   @Generated
    public double getPrice() {
       return this.price;
    }
 
-   @Generated
    public FlowerType getFlowerType() {
       return this.flowerType;
    }
 
-   @Generated
-   public void setSepalLength(double sepalLength) {
-      this.sepalLength = sepalLength;
-   }
-
-   @Generated
-   public void setColor(FlowerColor color) {
-      this.color = color;
-   }
-
-   @Generated
-   public void setPrice(double price) {
-      this.price = price;
-   }
-
-   @Generated
-   public void setFlowerType(FlowerType flowerType) {
-      this.flowerType = flowerType;
-   }
-
-   public Flower() {
-   }
-
    public String getColor() {
       return this.color.toString();
+   }
+
+   // Setters
+   public void setSepalLength(double sepaLength) {
+      this.sepalLength = sepaLength;
+   }
+
+   public void setColor(FlowerColor clr) {
+      this.color = clr;
+   }
+
+   public void setPrice(double prc) {
+      this.price = prc;
+   }
+
+   public void setFlowerType(FlowerType flwrType) {
+      this.flowerType = flwrType;
    }
 }

@@ -41,7 +41,7 @@ public class FlowerBucket {
     }
 
     @Generated
-    public void setFlowerPacks(List<FlowerPack> flowerPacks) {
-        this.flowerPacks = flowerPacks;
+    public void setFlowerPacks(List<FlowerPack> flwrPacks) {
+        this.flowerPacks = flwrPacks;
     }
 }

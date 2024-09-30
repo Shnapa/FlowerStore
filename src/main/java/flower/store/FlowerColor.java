@@ -7,8 +7,8 @@ public enum FlowerColor {
 
     private final String stringRepresentation;
 
-    FlowerColor(String stringRepresentation) {
-        this.stringRepresentation = stringRepresentation;
+    FlowerColor(String stringRepresentatio) {
+        this.stringRepresentation = stringRepresentatio;
     }
 
     @Override
