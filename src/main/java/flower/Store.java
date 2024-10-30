@@ -1,4 +1,4 @@
-package flower.store;
+package flower;
 
 public class Store {
    public Store() {

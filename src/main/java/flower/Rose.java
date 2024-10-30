@@ -1,4 +1,5 @@
-package flower.store;
+package flower;
+
 //
 public class Rose extends Flower {
 
@@ -6,7 +7,7 @@ public class Rose extends Flower {
         super();
     }
 
-    public Rose(double sepalLength, FlowerColor color, 
+    public Rose(int sepalLength, FlowerColor color, 
     double price, FlowerType flowerType) {
         super(sepalLength, color, price, flowerType);
     }
